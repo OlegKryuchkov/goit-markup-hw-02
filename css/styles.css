@@ -29,34 +29,17 @@ background-tertiary #F5F4FA
   --background-primary: #ffffff;
   --background-secondary: #2f303a;
   --background-tertiary: #f5f4fa;
-}
-
-:root {
   --header-text-primary: #212121;
   --header-text-secondary: #757575;
   --header-text-accent: #2196f3;
-}
-:root {
   --hero-text-primary: #ffffff;
-}
-
-:root {
   --body-text-primary: #212121;
   --body-text-secondary: #757575;
-}
-
-:root {
   --footer-text-primary: #ffffff;
   --footer-text-secondary: rgba(255, 255, 255, 0.6);
   --footer-text-accent: #2196f3;
-}
-
-:root {
   --button-background-primary: #2196f3;
   --button-background-secondary: #f5f4fa;
-}
-
-:root {
   --button-text-primary: #ffffff;
   --button-text-secondary: #212121;
 }
@@ -84,6 +67,7 @@ body {
 }
 
 .header-logo {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -295,8 +279,6 @@ body {
 
 /* ---------------PORTFOLIO MENU----------------*/
 
-.menu {
-}
 .menu-title {
 }
 .menu-list {
@@ -309,12 +291,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--body-text-primary);
+  background: var(--button-background-secondary);
+
   cursor: pointer;
 }
 
 .btn-menu-item:hover .btn-menu-item:focus {
   color: var(--button-text-primary);
-  background: var(--button-text-primary);
+  background: var(--button-background-primary);
 }
 
 /* ---------------PORTFOLIO PRODUCTS----------------*/
