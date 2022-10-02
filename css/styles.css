@@ -1,5 +1,6 @@
 body {
-  font-family: roboto;
+  font-family: roboto, sans-serif;
+  background: #ffffff;
 }
 
 .list {
@@ -10,6 +11,7 @@ body {
   text-decoration: none;
 }
 
+/* ---------------HEADER(MAIN+PORTFOLIO)---------------*/
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -22,8 +24,10 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
+  color: #000000;
+}
+.header-logo-span {
   color: #2196f3;
 }
 
@@ -32,6 +36,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-mail:hover,
+.header-mail:focus {
   color: #2196f3;
 }
 
@@ -43,28 +52,227 @@ body {
   color: #757575;
 }
 
+.header-tel:hover,
+.header-tel:focus {
+  color: #2196f3;
+}
+
+/* ---------------SECTION HERO----------------*/
 .hero {
   background: #2f303a;
 }
 
-.hero-text {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.364;
-  /* or 136% */
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ---------------SECTION BENEFITS----------------*/
+.benefits {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.benefits-item-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ---------------SECTION WHATWEDO----------------*/
+
+.whatwedo {
+}
+.whatwedo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.whatwedo-list {
+}
+.whatwedo-item {
+}
+
+/* ---------------SECTION TEAM----------------*/
+.team {
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-list {
+}
+.team-item {
+}
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-item-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ---------------FOOTER----------------*/
+.footer {
+  background: #2f303a;
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-logo-span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.footer-adress {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-adress:hover,
+.footer-adress:focus {
+  color: #2196f3;
+}
+
+.footer-list {
+}
+.footer-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail:hover,
+.footer-mail:focus {
+  color: #2196f3;
+}
+
+.footer-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: #2196f3;
+}
+
+/* ---------------PORTFOLIO MENU----------------*/
+
+.menu {
+}
+.menu-title {
+}
+.menu-list {
+}
+.btn-menu-item {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+
+.btn-menu-item:hover .btn-menu-item:focus {
+  color: #ffffff;
+  background: #2196f3;
+}
+
+/* ---------------PORTFOLIO PRODUCTS----------------*/
+
+.products {
+}
+.products-list {
+}
+.products-item {
+}
+.products-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.products-item-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: #757575;
 }
