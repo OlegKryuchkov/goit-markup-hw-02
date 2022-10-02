@@ -1,6 +1,69 @@
+/* ---------------COLORS----------------*/
+/* 
+
+header-text-primary #212121
+header-text-secondary #757575
+header-text-accent #2196F3
+
+hero-text-primary #ffffff
+
+body-text-primary #212121
+body-text-secondary #757575
+
+footer-text-primary #ffffff
+footer-text-secondary rgba(255, 255, 255, 0.6);
+footer-text-accent #2196F3
+
+button-background-primary #2196f3
+button-background-secondary #F5F4FA
+button-text-primary #ffffff
+button-text-secondary #212121
+
+background-primary #ffffff
+background-secondary #2F303A
+background-tertiary #F5F4FA
+
+*/
+
+:root {
+  --background-primary: #ffffff;
+  --background-secondary: #2f303a;
+  --background-tertiary: #f5f4fa;
+}
+
+:root {
+  --header-text-primary: #212121;
+  --header-text-secondary: #757575;
+  --header-text-accent: #2196f3;
+}
+:root {
+  --hero-text-primary: #ffffff;
+}
+
+:root {
+  --body-text-primary: #212121;
+  --body-text-secondary: #757575;
+}
+
+:root {
+  --footer-text-primary: #ffffff;
+  --footer-text-secondary: rgba(255, 255, 255, 0.6);
+  --footer-text-accent: #2196f3;
+}
+
+:root {
+  --button-background-primary: #2196f3;
+  --button-background-secondary: #f5f4fa;
+}
+
+:root {
+  --button-text-primary: #ffffff;
+  --button-text-secondary: #212121;
+}
+
 body {
   font-family: roboto, sans-serif;
-  background: #ffffff;
+  background: var(--background-primary);
 }
 
 .list {
@@ -17,7 +80,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--header-text-primary);
 }
 
 .header-logo {
@@ -28,7 +91,7 @@ body {
   color: #000000;
 }
 .header-logo-span {
-  color: #2196f3;
+  color: var(--header-text-accent);
 }
 
 .header-mail {
@@ -36,12 +99,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--header-text-secondary);
 }
 
 .header-mail:hover,
 .header-mail:focus {
-  color: #2196f3;
+  color: var(--header-text-accent);
 }
 
 .header-tel {
@@ -49,17 +112,17 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--header-text-secondary);
 }
 
 .header-tel:hover,
 .header-tel:focus {
-  color: #2196f3;
+  color: var(--header-text-accent);
 }
 
 /* ---------------SECTION HERO----------------*/
 .hero {
-  background: #2f303a;
+  background: var(--background-secondary);
 }
 
 .hero-title {
@@ -68,7 +131,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--hero-text-primary);
 }
 
 .hero-button {
@@ -77,8 +140,8 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--hero-text-primary);
+  background: var(--button-background-primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -99,15 +162,14 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #212121;
+  color: var(--body-text-primary);
 }
 .benefits-item-description {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--body-text-secondary);
 }
 
 /* ---------------SECTION WHATWEDO----------------*/
@@ -119,7 +181,7 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--body-text-primary);
 }
 
 .whatwedo-list {
@@ -129,13 +191,14 @@ body {
 
 /* ---------------SECTION TEAM----------------*/
 .team {
+  background: var(--background-tertiary);
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--body-text-primary);
 }
 .team-list {
 }
@@ -147,7 +210,7 @@ body {
   line-height: calc(19 / 16);
   /* identical to box height */
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--body-text-primary);
 }
 .team-item-description {
   font-weight: 400;
@@ -155,12 +218,12 @@ body {
   line-height: calc(19 / 16);
   /* identical to box height */
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--body-text-secondary);
 }
 
 /* ---------------FOOTER----------------*/
 .footer {
-  background: #2f303a;
+  background: var(--background-secondary);
 }
 .footer-logo {
   font-family: "Raleway";
@@ -170,7 +233,7 @@ body {
   line-height: calc(31 / 26);
   /* identical to box height */
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--footer-text-primary);
 }
 .footer-logo-span {
   font-family: "Raleway";
@@ -180,7 +243,7 @@ body {
   line-height: calc(31 / 26);
   /* identical to box height */
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--footer-text-accent);
 }
 
 .footer-adress {
@@ -190,12 +253,12 @@ body {
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--footer-text-primary);
 }
 
 .footer-adress:hover,
 .footer-adress:focus {
-  color: #2196f3;
+  color: var(--footer-text-accent);
 }
 
 .footer-list {
@@ -207,12 +270,12 @@ body {
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text-secondary);
 }
 
 .footer-mail:hover,
 .footer-mail:focus {
-  color: #2196f3;
+  color: var(--footer-text-accent);
 }
 
 .footer-tel {
@@ -222,12 +285,12 @@ body {
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text-secondary);
 }
 
 .footer-tel:hover,
 .footer-tel:focus {
-  color: #2196f3;
+  color: var(--footer-text-accent);
 }
 
 /* ---------------PORTFOLIO MENU----------------*/
@@ -245,13 +308,13 @@ body {
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--body-text-primary);
   cursor: pointer;
 }
 
 .btn-menu-item:hover .btn-menu-item:focus {
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--button-text-primary);
+  background: var(--button-text-primary);
 }
 
 /* ---------------PORTFOLIO PRODUCTS----------------*/
@@ -267,12 +330,12 @@ body {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--body-text-primary);
 }
 .products-item-description {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--body-text-secondary);
 }
